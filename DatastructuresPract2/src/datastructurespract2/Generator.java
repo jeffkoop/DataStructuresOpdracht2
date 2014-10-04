@@ -53,18 +53,18 @@ public class Generator {
         int restStudentsPerOrientation = (studentsPerOrientation - (studentsPerClass * numClasses));
         int restStudents = numStudents % CLASS_TYPES;
         int restSumStudents = numStudents % ((studentsPerClass * numClasses) * CLASS_TYPES);
-
-        System.out.println("Students: " + numStudents);
-        System.out.println("Students per orientation: " + studentsPerOrientation);
-        System.out.println("number of classes per orientation: " + numClasses + " total classes: " + numTotalClasses);
-        System.out.println("max capacity: " + numClasses * MAX_STUDENTS);
-        System.out.println("students per class " + studentsPerClass + " per orientation " + (studentsPerClass * numClasses)
-                + " total " + ((studentsPerClass * numClasses) * CLASS_TYPES));
-
-        System.out.println("rest students per orientation: " + restStudentsPerOrientation);
-        System.out.println("rest students from all orientations: " + restStudentsOrientations);
-        System.out.println("total rest students: " + restStudents);
-        System.out.println("sum: " + restSumStudents +"\n");
+//
+//        System.out.println("Students: " + numStudents);
+//        System.out.println("Students per orientation: " + studentsPerOrientation);
+//        System.out.println("number of classes per orientation: " + numClasses + " total classes: " + numTotalClasses);
+//        System.out.println("max capacity: " + numClasses * MAX_STUDENTS);
+//        System.out.println("students per class " + studentsPerClass + " per orientation " + (studentsPerClass * numClasses)
+//                + " total " + ((studentsPerClass * numClasses) * CLASS_TYPES));
+//
+//        System.out.println("rest students per orientation: " + restStudentsPerOrientation);
+//        System.out.println("rest students from all orientations: " + restStudentsOrientations);
+//        System.out.println("total rest students: " + restStudents);
+//        System.out.println("sum: " + restSumStudents +"\n");
 
         //create a klas arraylist and add new classes with classname
         klassen = new ArrayList<>();
@@ -106,11 +106,11 @@ public class Generator {
         return String.format("%.1f", result);
     }
 
-    public void printList() {
-        for (Object s : studentList) {
-            System.out.println(s.toString());
-        }
-    }
+//    public void printList() {
+//        for (Object s : studentList) {
+//            System.out.println(s.toString());
+//        }
+//    }
 
     public void printClass(int index) {
         Iterator iterator = klassen.get(index).getStudentList().iterator();

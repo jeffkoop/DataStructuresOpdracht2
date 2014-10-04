@@ -30,10 +30,10 @@ public class sortCijfer {
             sort.set(index, temp);
           }
       
-      System.out.println("\n\nStudenten gesorteerd op Cijfer:\n\n");
-      
-      for (int i = 0; i < sort.size(); i++) {
-          System.out.println(sort.get(i));
-      }
+//      System.out.println("\n\nStudenten gesorteerd op Cijfer:\n\n");
+//      
+//      for (int i = 0; i < sort.size(); i++) {
+//          System.out.println(sort.get(i));
+//      }
     } 
 }

@@ -3,11 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Hokaki/Documents/GitHub/practicum2/DatastructuresPract2/src/datastructurespract2/Compare.java</file>
-            <file>file:/C:/Users/Hokaki/Documents/GitHub/practicum2/DatastructuresPract2/src/datastructurespract2/Student.java</file>
-            <file>file:/C:/Users/Hokaki/Documents/GitHub/practicum2/DatastructuresPract2/src/datastructurespract2/sortCijfer.java</file>
-            <file>file:/C:/Users/Hokaki/Documents/GitHub/practicum2/DatastructuresPract2/src/datastructurespract2/DSopdr2.java</file>
-            <file>file:/C:/Users/Hokaki/Documents/GitHub/practicum2/DatastructuresPract2/src/datastructurespract2/Generator.java</file>
+            <file>file:/C:/Users/Hokaki/Documents/GitHub/DataStructuresOpdracht2/DatastructuresPract2/src/datastructurespract2/DSopdr2.java</file>
+            <file>file:/C:/Users/Hokaki/Documents/GitHub/DataStructuresOpdracht2/DatastructuresPract2/src/datastructurespract2/sortCijfer.java</file>
+            <file>file:/C:/Users/Hokaki/Documents/GitHub/DataStructuresOpdracht2/DatastructuresPract2/src/datastructurespract2/Generator.java</file>
+            <file>file:/C:/Users/Hokaki/Documents/GitHub/DataStructuresOpdracht2/DatastructuresPract2/src/datastructurespract2/Student.java</file>
+            <file>file:/C:/Users/Hokaki/Documents/GitHub/DataStructuresOpdracht2/DatastructuresPract2/src/datastructurespract2/SortKlasStudent.java</file>
+            <file>file:/C:/Users/Hokaki/Documents/GitHub/DataStructuresOpdracht2/DatastructuresPract2/src/datastructurespract2/CompareStudents.java</file>
+            <file>file:/C:/Users/Hokaki/Documents/GitHub/DataStructuresOpdracht2/DatastructuresPract2/src/datastructurespract2/SortBucket.java</file>
         </group>
     </open-files>
 </project-private>
