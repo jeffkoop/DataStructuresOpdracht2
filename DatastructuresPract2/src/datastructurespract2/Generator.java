@@ -106,11 +106,11 @@ public class Generator {
         return String.format("%.1f", result);
     }
 
-//    public void printList() {
-//        for (Object s : studentList) {
-//            System.out.println(s.toString());
-//        }
-//    }
+    public void printList() {
+        for (Object s : studentList) {
+            System.out.println(s.toString());
+        }
+    }
 
     public void printClass(int index) {
         Iterator iterator = klassen.get(index).getStudentList().iterator();
