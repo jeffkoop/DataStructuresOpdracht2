@@ -35,8 +35,9 @@ public class Student implements Comparable<Student> {
         return cijfer;
     }
 
+    @Override
     public int compareTo(Student s) {
-        String temp = "99";
+       final String temp = "99";
         
         if(s.getCijfer().equals("10"))
             return cijfer.compareTo(temp);
