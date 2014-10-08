@@ -15,43 +15,43 @@ public class DSopdr2 {
 //        sortCijfer.Insertion(gen.getStudentList());
 //        gen.printClass(0);
 
-        Stopwatch stopwatch = new Stopwatch();
-        double t0;
-        double t1;
-        double lapTime;
+//        Stopwatch stopwatch = new Stopwatch();
+//        double t0;
+//        double t1;
+//        double lapTime;
         Generator gen;
         
-        int[] inputValues = {200, 400, 800, 1600, 3200};
+        int[] inputValues = {2000, 4000, 8000, 16000, 32000};
 
         for (int j = 0; j < inputValues.length; j++) {
             gen = new Generator(inputValues[j]);
-            System.out.println(inputValues[j]);
+//            System.out.println(inputValues[j]);
             
-            System.out.println("after cijfer sort:");
-            t0 = stopwatch.elapsedTime();
+//            System.out.println("after cijfer sort:");
+//            t0 = stopwatch.elapsedTime();
             sortCijfer.Insertion(gen.getStudentList());
-            t1 = stopwatch.elapsedTime();
-            lapTime = (1000 * t1 - 1000 * t0) / 1000;
-            System.out.println("(" + t0 + "\t " + t1 + "\t laptime:" + lapTime + ")");
+//            t1 = stopwatch.elapsedTime();
+//            lapTime = (1000 * t1 - 1000 * t0) / 1000;
+//            System.out.println("(" + t0 + "\t " + t1 + "\t laptime:" + lapTime + ")");
             
             Collections.shuffle(gen.getStudentList());
             
-            System.out.println("after KlasStudent sort:");
-            t0 = stopwatch.elapsedTime();
+//            System.out.println("after KlasStudent sort:");
+//            t0 = stopwatch.elapsedTime();
             SortKlasStudent.sort(gen.getStudentList());
-            t1 = stopwatch.elapsedTime();
-            lapTime = (1000 * t1 - 1000 * t0) / 1000;
-            System.out.println("(" + t0 + "\t " + t1 + "\t laptime:" + lapTime + ")");
+//            t1 = stopwatch.elapsedTime();
+//            lapTime = (1000 * t1 - 1000 * t0) / 1000;
+//            System.out.println("(" + t0 + "\t " + t1 + "\t laptime:" + lapTime + ")");
 
             Collections.shuffle(gen.getStudentList());
 
-            System.out.println("after bucket sort:");
-            t0 = stopwatch.elapsedTime();
+//            System.out.println("after bucket sort:");
+//            t0 = stopwatch.elapsedTime();
             SortBucket.sort(gen.getStudentList());
-            t1 = stopwatch.elapsedTime();
-            lapTime = (1000 * t1 - 1000 * t0) / 1000;
-            System.out.println("(" + t0 + "\t " + t1 + "\t laptime:" + lapTime + ")");
-            System.out.println("\n");
+//            t1 = stopwatch.elapsedTime();
+//            lapTime = (1000 * t1 - 1000 * t0) / 1000;
+//            System.out.println("(" + t0 + "\t " + t1 + "\t laptime:" + lapTime + ")");
+//            System.out.println("\n");
         }
 
     }
