@@ -53,7 +53,7 @@ public class Generator {
         int restStudentsPerOrientation = (studentsPerOrientation - (studentsPerClass * numClasses));
         int restStudents = numStudents % CLASS_TYPES;
         int restSumStudents = numStudents % ((studentsPerClass * numClasses) * CLASS_TYPES);
-//
+
 //        System.out.println("Students: " + numStudents);
 //        System.out.println("Students per orientation: " + studentsPerOrientation);
 //        System.out.println("number of classes per orientation: " + numClasses + " total classes: " + numTotalClasses);
@@ -64,7 +64,7 @@ public class Generator {
 //        System.out.println("rest students per orientation: " + restStudentsPerOrientation);
 //        System.out.println("rest students from all orientations: " + restStudentsOrientations);
 //        System.out.println("total rest students: " + restStudents);
-//        System.out.println("sum: " + restSumStudents +"\n");
+//        System.out.println("sum: " + restSumStudents + "\n");
 
         //create a klas arraylist and add new classes with classname
         klassen = new ArrayList<>();
@@ -86,6 +86,16 @@ public class Generator {
                 }
             }
         }
+        //add rest students to classes
+        for (int i = 0; i < restSumStudents; i++) {
+            klassen.get(i).addStudent(studentList.get(studentCounter+i));
+        }
+        
+//        Iterator it = studentList.iterator();
+//        while(it.hasNext()){
+//            System.out.println(it.next().toString());
+//        }
+        
     }
 
     private void generateStudents() {
@@ -122,17 +132,18 @@ public class Generator {
     public ArrayList getStudentList() {
         return studentList;
     }
-        public ArrayList getKlassen(){
+
+    public ArrayList getKlassen() {
         return klassen;
     }
-    
-    public int compareKlas(int x, int z){
+
+    public int compareKlas(int x, int z) {
         System.out.println(klassen.get(x).toString());
         System.out.println(klassen.get(z).toString());
         return klassen.get(x).compareTo(klassen.get(z));
     }
-    
-    public void sortKlasStudent(){
+
+    public void sortKlasStudent() {
         SortKlasStudent.sort(studentList);
     }
 }
